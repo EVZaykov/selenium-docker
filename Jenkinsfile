@@ -11,7 +11,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //sh
-                bat "docker build -t='zai/sd' ."
+                bat "docker build -t=zai/sd ."
             }
         }
         stage('Push Image') {
