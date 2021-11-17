@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Push Image') {
             steps {
-			    withDockerRegistry([ credentialsId: 'dockerHub', passwordVariable: 'pass', url: "" ]) {
+			    withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'pass', usernameVariable: 'user')]) {
                     //sh
 			        bat "docker login --username=${user} --password=${pass}"
 			        bat "docker push zai/sd:latest"
