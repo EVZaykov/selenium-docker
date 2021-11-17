@@ -1,0 +1,50 @@
+mvn clean package -DskipTests
+
+
+Первый способ. запустить эту команду в папке с файлом yaml
+"docker-compose up" in folder with yaml file
+
+---------------------------------------------------------------------------------------------------------------------
+зелениум
+docker pull elgalu/selenium
+docker pull dosel/zalenium
+docker run --rm -ti --name zalenium -p 4444:4444 -v /var/run/docker.sock:/var/run/docker.sock -v /tmp/videos:/home/seluser/videos --privileged dosel/zalenium start
+
+http://localhost:4444/grid/admin/live
+http://localhost:4444/dashboard/#
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+D:\SeleniumDockerJenkins\target>java -cp selenium-docker.jar;selenium-docker-tests.jar;libs/* org.testng.TestNG ../testng.xml
+D:\SeleniumDockerJenkins\target>java -cp selenium-docker.jar;selenium-docker-tests.jar;libs/* -DBROWSER=firefox org.testng.TestNG ../testng.xml
+
+создаем свой образ
+docker build -q -t=z/sd .
+заходим в терминал контейнера и делаем общую папку моего компа и контейнера
+docker run -it --entrypoint=/bin/sh -v D:/SeleniumDockerJenkins/outputDocker:/user/zaikov/test-output z/sd
+OR
+docker run -e HUB_HOST=192.168.0.10 -e MODULE=testng1.xml -e BROWSER=firefox -v D:/SeleniumDockerJenkins/outputDocker:/user/zaikov/test-output z/sd
+
+и в нем запустить автотесты
+java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* -DHUB_HOST=192.168.0.10 org.testng.TestNG testng.xml
+
+
+
+
+создаем свой образ
+docker build -q -t=z/sd .
+docker run -e HUB_HOST=192.168.0.10 -e MODULE=testng1.xml z/sd
+old
+java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* org.testng.TestNG testng.xml
+переключиться на цмд контейнера
+docker run -it --entrypoint=/bin/sh vinsdocker/selenium-docker
+
+81e4b2ee850d4b08a4338d72a3162bf0
+dae043308cd2485abf5a4fa7faf8c999
+docker run -p 8080:8080 -p 50000:50000 -v "D:/SeleniumDockerJenkins/jenkins:/jenkins" jenkins/jenkins:lts
+
+
+
+
+
+

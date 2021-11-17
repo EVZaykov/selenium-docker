@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="github-signIn" duration-ms="7593" started-at="2021-11-16T19:21:36Z" finished-at="2021-11-16T19:21:43Z">
+    <groups>
+    </groups>
+    <test name="SignIn to GitHub111111" duration-ms="7593" started-at="2021-11-16T19:21:36Z" finished-at="2021-11-16T19:21:43Z">
+      <class name="com.github.test.GitHubSignInTest">
+        <test-method status="PASS" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.github.test.GitHubSignInTest@6adca536]" name="setDriver" is-config="true" duration-ms="1992" started-at="2021-11-16T19:21:36Z" finished-at="2021-11-16T19:21:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@180bc464]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="signIn1Test()[pri:0, instance:com.github.test.GitHubSignInTest@6adca536]" name="signIn1Test" duration-ms="1852" started-at="2021-11-16T19:21:38Z" finished-at="2021-11-16T19:21:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn1Test -->
+        <test-method status="PASS" signature="signIn2Test()[pri:0, instance:com.github.test.GitHubSignInTest@6adca536]" name="signIn2Test" duration-ms="1160" started-at="2021-11-16T19:21:40Z" finished-at="2021-11-16T19:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn2Test -->
+        <test-method status="PASS" signature="signIn444Test()[pri:0, instance:com.github.test.GitHubSignInTest@6adca536]" name="signIn444Test" duration-ms="1301" started-at="2021-11-16T19:21:41Z" finished-at="2021-11-16T19:21:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn444Test -->
+        <test-method status="PASS" signature="signInTest()[pri:0, instance:com.github.test.GitHubSignInTest@6adca536]" name="signInTest" duration-ms="1144" started-at="2021-11-16T19:21:42Z" finished-at="2021-11-16T19:21:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.github.test.GitHubSignInTest@6adca536]" name="closeDriver" is-config="true" duration-ms="132" started-at="2021-11-16T19:21:43Z" finished-at="2021-11-16T19:21:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.github.test.GitHubSignInTest -->
+    </test> <!-- SignIn to GitHub111111 -->
+  </suite> <!-- github-signIn -->
+</testng-results>

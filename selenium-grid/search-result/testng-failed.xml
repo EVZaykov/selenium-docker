@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [github-signIn]" parallel="tests">
+  <test thread-count="3" name="SignIn to GitHub111111(failed)" parallel="tests">
+    <classes>
+      <class name="com.github.test.GitHubSignInTest">
+        <methods>
+          <include name="setDriver"/>
+          <include name="signIn2Test"/>
+          <include name="closeDriver"/>
+          <include name="signIn444Test"/>
+          <include name="signIn1Test"/>
+          <include name="signInTest"/>
+        </methods>
+      </class> <!-- com.github.test.GitHubSignInTest -->
+    </classes>
+  </test> <!-- SignIn to GitHub111111(failed) -->
+</suite> <!-- Failed suite [github-signIn] -->

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestTest1" duration-ms="10113" started-at="2021-11-16T19:21:36Z" finished-at="2021-11-16T19:21:46Z">
+    <groups>
+    </groups>
+    <test name="TestTest2" duration-ms="10113" started-at="2021-11-16T19:21:36Z" finished-at="2021-11-16T19:21:46Z">
+      <class name="com.github.test.TestTest">
+        <test-method status="PASS" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.github.test.TestTest@6adca536]" name="setDriver" is-config="true" duration-ms="3447" started-at="2021-11-16T19:21:36Z" finished-at="2021-11-16T19:21:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@180bc464]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="HelloTest()[pri:0, instance:com.github.test.TestTest@6adca536]" name="HelloTest" duration-ms="2858" started-at="2021-11-16T19:21:39Z" finished-at="2021-11-16T19:21:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HelloTest -->
+        <test-method status="PASS" signature="HelloTest1()[pri:0, instance:com.github.test.TestTest@6adca536]" name="HelloTest1" duration-ms="1209" started-at="2021-11-16T19:21:42Z" finished-at="2021-11-16T19:21:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HelloTest1 -->
+        <test-method status="PASS" signature="HelloTest2()[pri:0, instance:com.github.test.TestTest@6adca536]" name="HelloTest2" duration-ms="1043" started-at="2021-11-16T19:21:43Z" finished-at="2021-11-16T19:21:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HelloTest2 -->
+        <test-method status="PASS" signature="HelloTest4()[pri:0, instance:com.github.test.TestTest@6adca536]" name="HelloTest4" duration-ms="920" started-at="2021-11-16T19:21:44Z" finished-at="2021-11-16T19:21:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HelloTest4 -->
+        <test-method status="FAIL" signature="closeDriver()[pri:0, instance:com.github.test.TestTest@6adca536]" name="closeDriver" is-config="true" duration-ms="622" started-at="2021-11-16T19:21:45Z" finished-at="2021-11-16T19:21:46Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: '46b0f78aa31e', ip: '172.18.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.60.1-microsoft-standard-WSL2', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 115, moz:profile: /tmp/rust_mozprofile.MW1OA1..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.10.60.1-microsoft-standar..., rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 90801844-d359-4507-bd23-c4d...}
+Session ID: 90801844-d359-4507-bd23-c4d3c1ed1f3e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: '46b0f78aa31e', ip: '172.18.0.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.60.1-microsoft-standard-WSL2', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 115, moz:profile: /tmp/rust_mozprofile.MW1OA1..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.10.60.1-microsoft-standar..., rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 90801844-d359-4507-bd23-c4d...}
+Session ID: 90801844-d359-4507-bd23-c4d3c1ed1f3e
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:448)
+at com.commonInTest.BaseTest.closeDriver(BaseTest.java:54)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.afterRun(TestRunner.java:725)
+at org.testng.TestRunner.run(TestRunner.java:509)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.github.test.TestTest -->
+    </test> <!-- TestTest2 -->
+  </suite> <!-- TestTest1 -->
+</testng-results>
