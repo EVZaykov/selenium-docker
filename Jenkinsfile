@@ -19,6 +19,7 @@ pipeline {
 			    withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'pass', usernameVariable: 'user')]) {
                     //sh
 			        bat "docker login --username=${user} --password=${pass}"
+			        bat "docker tag selenium zai/sd:latest"
 			        bat "docker push zai/sd:latest"
 			    }
             }
