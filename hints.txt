@@ -45,6 +45,18 @@ docker run -p 8080:8080 -p 50000:50000 -v "D:/SeleniumDockerJenkins/jenkins:/jen
 
 
 
+push to docker hub
+(I created repository in docker hub with name zaikov)
+docker logout
+docker build -t zaikov .
+docker tag zaikov javaautotesting/zaikov:zaikov
+docker login
+Username: javaautotesting
+Password: **********
+Login Succeeded
+docker push javaautotesting/zaikov:zaikov
+
+
 
 
 

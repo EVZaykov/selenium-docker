@@ -11,7 +11,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //sh
-                bat "docker build -t=zai/sd ."
+                bat "docker build -t zaikov ."
             }
         }
         stage('Push Image') {
@@ -19,8 +19,8 @@ pipeline {
 			    withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'pass', usernameVariable: 'user')]) {
                     //sh
 			        bat "docker login --username=${user} --password=${pass}"
-			        bat "docker tag zai/sd:latest"
-			        bat "docker push zai/sd:latest"
+			        bat "docker tag zaikov javaautotesting/zaikov:zaikov"
+			        bat "docker push javaautotesting/zaikov:zaikov"
 			    }
             }
         }
