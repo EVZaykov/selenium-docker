@@ -39,4 +39,12 @@ public class GitHubSignInTest extends BaseTest {
         signInPage.enterUserCredentials("EVZaykov1","Test1VTB");
         signInPage.pushSignInButton();
     }
+
+    @Test
+    public void signIn2Test1(){
+        SignInPage signInPage = new SignInPage(driver);
+        signInPage.goTo();
+        signInPage.enterUserCredentials("EVZaykov1","Test1VTB");
+        signInPage.pushSignInButton();
+    }
 }
