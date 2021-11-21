@@ -1,6 +1,6 @@
     <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
     <suite name="github-signIn" parallel="tests" thread-count="3" >
-        <test name="SignIn to GitHub111111">
+        <test name="SignIn to GitHub111111ПриветЖеня">
             <classes>
                 <class name="com.github.test.GitHubSignInTest"/>
             </classes>
